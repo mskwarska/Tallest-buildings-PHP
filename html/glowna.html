@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<head>
+	<link href='css/styl.css' rel='stylesheet' type='text/css' />
+	<link href='fontello/css/fontello.css' rel='stylesheet' type='text/css' />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="startlock()" >
+	<h1>Największe budynki świata!</h1>
+	<h2>Dzięki tej stronie poznasz największe budynki świata</h2>
+	
+	<form action="dane.php" method="get">
+	<K>Imie: <input type="text" name="name"></K><br>
+	<K>E-mail: <input type="text" name="email"></K><br>
+	<k>Numer telefonu: <input type="text" name="phone"></k><br>
+	<P><input type="submit"></P>
+	</form>
+	
+	<br></br>
+	
+	<a>Pałac Kultury i Nauki, PKiN to najwyższy budynek w Polsce (pod względem wysokości całkowitej), znajdujący się w śródmieściu Warszawy przy placu Defilad 1. Jego wysokość całkowita to 237 metrów.</a>
+	
+	
+	<img src="https://www.pot.gov.pl/images/wiadomosci-z-pot/2020/05/pkin-duzy.jpg" valign="top" height=60% width=95%>
+	<img src="https://ocdn.eu/pulscms-transforms/1/N85k9kuTURBXy83MjllYjNmNC04YTM4LTQ3MzYtYjQ1Zi1jNTlmNGFjZjY2MGIuanBlZ5GVAgDNAfTCw4GhMAU" valign="top" height=60% width=95%>
+		
+	<img src="https://s3.eu-central-1.amazonaws.com/pressland-cms/cache/article_show_cover/2p/shutterstock-1667318467.jpeg" valign="top" height=60% width=95%>
+		
+	<div2 id="animacjaTestowa1" class="test-block">Gdy klikniesz na zdjęcie powiększy się.</div2>
+		<script>
+			$(document).ready(function(){
+				$("img").on("click", function(){
+					$(this).animate({
+						width: "950px",
+						high: "200px",
+						opacity: '0,5',
+						fontSize: "1em",
+						borderWidth: "8px"
+						}, 600)
+					});
+				});
+			</script>
+	
+	<br></br>
+	
+	<form method="POST" name="background">
+			<input type="button" value="Niebieskie tło" ONCLICK="changeBackground('#3399FF');">
+			<input type="button" value="Czerwone tło" onclick="changeBackground('#CC0000');">
+			<input type="button" value="Zielone tło" onclick="changeBackground('#66CC33');">
+			<input type="button" value="Żółte tło" onclick="changeBackground('#FFFF99');">
+			<input type="button" value="Domyślne tło" onclick="changeBackground('#303030');">
+	</form>
+	<br></br>
+</body>
